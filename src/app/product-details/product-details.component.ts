@@ -2,19 +2,15 @@ import {Component, OnInit} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { products } from '../products';
 
+
 @Component({
-    selector: 'app-product-alerts',
-    templateUrl: './product-alerts.component.html',
-    styleUrls: ['./product-alerts.component.css']
+    selector: 'app-product-details',
+    templateUrl: './product-details.component.html',
+    styleUrls: ['./product-details.component.css']
 })
 export class ProductDetailsComponent implements OnInit {
+
     product;
-    route;
-
-
-    constructor( route: ActivatedRoute) {
-        this.route = route;
-    }
 
     ngOnInit() {
         this.route.paramMap.subscribe(params => {
@@ -23,6 +19,10 @@ export class ProductDetailsComponent implements OnInit {
     }
 
 
+
+    constructor(
+        private route: ActivatedRoute,
+    ) { }
 
 
 
