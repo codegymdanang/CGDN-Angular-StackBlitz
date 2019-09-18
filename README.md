@@ -2,6 +2,7 @@
 # Tham khảo ví dụ tại trang 
 https://angular.io/start <br>
 https://viblo.asia/p/cung-tim-hieu-kien-truc-cua-angular-2-va-su-khac-nhau-ve-kien-truc-giua-angular-1-va-angular-2-gGJ592qpKX2 <br>
+http://itprotraining.vn/vi/tips-cong-nghe/Kien-truc-tong-quat-cua-Angular%205 <br>
 # Deploy app lên firebase
  https://medium.com/@longboardcreator/deploying-angular-6-applications-to-firebase-hosting-b5dacde9c772
 # Luồng đi của ứng dụng
