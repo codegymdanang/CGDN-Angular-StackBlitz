@@ -11,3 +11,27 @@ http://itprotraining.vn/vi/tips-cong-nghe/Kien-truc-tong-quat-cua-Angular%205 <b
 + Step 3 : Từ app.module.ts sẽ gọi app.component.ts
 + Step 4 : Trong app.component.ts ta khai báo app-root selector. Cái mà ta khai báo trong file index.html
 là root của cả chương 
+
+## Databinding
+### One way biding sử dụng {{ }}
++ Step 1 trong file user.component.ts trong component user. Ta có biến là name với giá trị
+là angular
++ Step 2 để hiển thị được giá trị angular lên trên front end cho người dùng thấy thì ta
+truyền vào biến nam trong 2 dấu ngoăc nhọn trong file user.component.html với cú 
+ pháp sau {{ name }} 
++ Như vậy chúng ta có thể kết luận để hiển thị giá trị từ ts qua html thì ta dùng {{ }}
+### Truyền giá trị vào sử dụng như 1 attribute
++ Step 1
+Trong file user.component.html. Ta có thể dùng attribute của thẻ để hiển thị giá trị
+<input value="{{ name }}" />
+
++ Steo 2 chúng ta có thể Sử dụng atrribute để biding dư liệu cách thứ 2. Cái này được khuyên nên 
+<input [value]="name" />
+
+### Truyền sự kiện
++ Step 1 . Trong file html ta khai báo nút button có sự kiện onclick <button (click)="onButtonClicked()">Change Name</button>. Như ta thấy sự kiện được bọc trong 2 dấu ngoại tròn () .
+Sự kiện có thể là click, dbClick etc. Sau đó là tên sự kiện.
++ Step 2 . Ta khai báo hàm onButtonCLick trong file user.component.ts. Để sử lý sự kiện khi người dùng click vào 
+### 2 way binding
++ Step 1 : Chúng ta phải sử dụng ngModule để thực hiện 2 way binding. Vì ngModule là 1 phần của FormsModule. Nên muốn sử dụng được 
+ngModule thì chúng ta phải import bằng tay FormsModule vào file app.module.

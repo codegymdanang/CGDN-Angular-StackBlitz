@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from "@angular/common/http";
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
@@ -14,13 +15,14 @@ import { UserComponent } from './user/user.component';
 
 @NgModule({
   imports: [
-    BrowserModule,
+    BrowserModule,FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent},
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component : CartComponent},
+      { path: 'user', component : UserComponent},
     ])
   ],
   declarations: [
