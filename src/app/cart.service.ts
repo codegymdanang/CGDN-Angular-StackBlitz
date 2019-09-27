@@ -32,4 +32,8 @@ export class CartService {
         return this.http.get ('/assets/shipping.json');
     }
 
+    displayOtherProducts() {
+        return this.http.get('http://164.132.226.137:1441/feed');
+    }
+
 }
