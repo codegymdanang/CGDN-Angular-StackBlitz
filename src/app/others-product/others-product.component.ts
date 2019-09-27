@@ -22,12 +22,11 @@ export class OthersProductComponent implements OnInit {
   }
 
   displayOtherProduct() {
-    let products = this.http.get('http://164.132.226.137:1441/feed');
 
     this.cartService.displayOtherProducts().subscribe(
         data => {
-              console.log(data),
-             // this.feeds = data,
+            //  console.log(data),
+              this.feeds = data,
               err => console.error(err),
               () => console.log("done")
         }
