@@ -39,5 +39,14 @@ ngModule thì chúng ta phải import bằng tay FormsModule vào file app.modul
 ## Kết nối webservice
 + Trong file cart.service.js import thư viện HttpClientmport.
 + Để gọi webservice phương thức get http.get('http://164.132.226.137:1441/feed') . Trong đó http://164.132.226.137:1441/feed là đường dẫn tới webservice
- 
+## Observable
++ Vì sao chọn Observable 
+https://www.learnrxjs.io/
+https://techtalk.vn/chon-promise-hay-observable-khi-lam-viec-voi-angular.html
 
+## Subcribe
++Khi chúng ta làm việc với Observable thì sẽ thường xuyên sử dụng phương thức subscribe để theo dõi các thay đổi của dữ liệu hoặc nhận về kết quả của một công việc nào đó. 
+this.http.get(apiUrl).subscribe(val => console.log(val));
+## UnSubcribe
++Khi API trả về kết quả thì dữ liệu đó sẽ được log ra qua phương thức subscribe. Và để kết thúc quá trình lắng nghe kết quả từ API trả về thì chúng ta sẽ xử dụng đến phương thức unsubscribe
+this.http.get(apiUrl).subscribe(val => console.log(val)).unsubscribe();
