@@ -35,3 +35,9 @@ Sự kiện có thể là click, dbClick etc. Sau đó là tên sự kiện.
 ### 2 way binding
 + Step 1 : Chúng ta phải sử dụng ngModule để thực hiện 2 way binding. Vì ngModule là 1 phần của FormsModule. Nên muốn sử dụng được 
 ngModule thì chúng ta phải import bằng tay FormsModule vào file app.module.
+
+## Kết nối webservice
++ Trong file cart.service.js import thư viện HttpClientmport.
++ Để gọi webservice phương thức get http.get('http://164.132.226.137:1441/feed') . Trong đó http://164.132.226.137:1441/feed là đường dẫn tới webservice
+ 
+
