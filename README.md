@@ -43,7 +43,8 @@ ngModule thì chúng ta phải import bằng tay FormsModule vào file app.modul
 + Vì sao chọn Observable 
 https://www.learnrxjs.io/
 https://techtalk.vn/chon-promise-hay-observable-khi-lam-viec-voi-angular.html
-
+## ES6
+https://www.lifewire.com/best-javascript-es6-features-4579821
 ## Subcribe
 +Khi chúng ta làm việc với Observable thì sẽ thường xuyên sử dụng phương thức subscribe để theo dõi các thay đổi của dữ liệu hoặc nhận về kết quả của một công việc nào đó. 
 this.http.get(apiUrl).subscribe(val => console.log(val));
