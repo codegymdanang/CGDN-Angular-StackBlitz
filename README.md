@@ -136,6 +136,36 @@ ngModule thì chúng ta phải import bằng tay FormsModule vào file app.modul
 ## Kết nối webservice
 + Trong file cart.service.js import thư viện HttpClientmport.
 + Để gọi webservice phương thức get http.get('http://164.132.226.137:1441/feed') . Trong đó http://164.132.226.137:1441/feed là đường dẫn tới webservice
++ Ví dụ các phương thức get , post , put (cái này mọi người phải đọc thêm rsjs để hiểu vê pipe . Ngoài ra còn khái niệm Promise sử lý bất đồng bộ 
++ Post
+```
+ sendJobNotificationManually(){
+    return this.http.post('/jobs/alert-queues','')
+    .pipe(
+      map((response: any) => response)
+    );
+}
+```
++ Get
+```
+getHotJobDetail(jobId) {
+    return this.http.get(`/hotjobs/${jobId}`)
+      .pipe(
+        map((response: any) => response)
+      );
+}
+```
++ Put
+```
+updateHotJobStatus(jobId, status, params = {}) {
+    return this.http.put<any>(`/hotjobs/${jobId}/${status}`, params)
+      .pipe(
+        map((response: any) => response)
+      );
+  }
+
+```
+
 ## Observable
 + Vì sao chọn Observable 
 https://www.learnrxjs.io/
