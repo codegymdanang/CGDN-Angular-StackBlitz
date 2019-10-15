@@ -28,7 +28,7 @@ Trong mỗi component có 3 files : ví dụ như trong component top-bar . Ta c
   </h3>
  </div>
  ```
- + Chúng ta có *ngFor <span style="color:red">cardinals</span>. dùng để repeat (lập lại) cac thẻ div. Chúng ta khai báo 1 biến product để duyệt các phần tử trong tập hợp  products. Tập hợp products sẽ được truyền từ controller sang cho html. Nếu products có 10 phần tử thì chúng ta sẽ có 10 cái div.
+ + Chúng ta có *ngFor . dùng để repeat (lập lại) cac thẻ div. Chúng ta khai báo 1 biến product để duyệt các phần tử trong tập hợp  products. Tập hợp products sẽ được truyền từ controller sang cho html. Nếu products có 10 phần tử thì chúng ta sẽ có 10 cái div.
  + Để hiển thị tên của từng sản phẩm thi mình dùng {{ product.name }} để hiển thị ra trang web
 ### Truyền giá trị vào component bằng @Input
  
