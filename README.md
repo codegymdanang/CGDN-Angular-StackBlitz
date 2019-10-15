@@ -8,6 +8,15 @@
 + Step 4 : Trong app.component.ts ta khai báo app-root selector. Cái mà ta khai báo trong file index.html
 là root của cả chương 
 
+## Các điểm chính của ứng dụng
+### Angular Teamplate
+- Cú pháp của Angular template được kế thừa từ HTML và Javascript . Trong phân này chúng ta sẽ giới thiệu cách sử dụng cú pháp trong module Product 
+- Để hiểu được template thì trong folder product-list. Mở file product-list.component.html 
+<h2>Products</h2>
+
+<div *ngFor="let product of products">
+</div>
+
 ## Databinding
 ### One way biding sử dụng {{ }}
 + Step 1 trong file user.component.ts trong component user. Ta có biến là name với giá trị
