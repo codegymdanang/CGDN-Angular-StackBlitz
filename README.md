@@ -16,8 +16,13 @@ là root của cả chương
  <h2>Products</h2>
 
  <div *ngFor="let product of products">
+      <h3>
+      {{ product.name }}
+  </h3>
  </div>
  ```
+ + Chúng ta có ngFor dùng để repeat (lập lại) cac thẻ div. Chúng ta khai báo 1 biến product để duyệt các phần tử trong tập hợp  products. Tập hợp products sẽ được truyền từ controller sang cho html. Nếu products có 10 phần tử thì chúng ta sẽ có 10 cái div.
+ + Để hiển thị tên của từng sản phẩm thi mình dùng {{ product.name }} để hiển thị ra trang web
 ## Databinding
 ### One way biding sử dụng {{ }}
 + Step 1 trong file user.component.ts trong component user. Ta có biến là name với giá trị
