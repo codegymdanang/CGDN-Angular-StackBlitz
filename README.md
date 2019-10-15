@@ -14,7 +14,7 @@ là root của cả chương
 - Component có 3 phần chính :
   + Component Class : quản lý dữ liệu , các methods , thao tác với dữ liệu và truyền dữ liệu cho html (view)
   + HTML template   : hiển thị giao diện (button, layout, ect)
-  + Styles          : CSS cho component
+  + Styles          : CSS cho component <br>
 Trong mỗi component có 3 files : ví dụ như trong component top-bar . Ta có top-bar.component.html ; top-bar.component.ts; top-bar.component.css
 ### Angular Teamplate
 - Cú pháp của Angular template được kế thừa từ HTML và Javascript . Trong phân này chúng ta sẽ giới thiệu cách sử dụng cú pháp trong module Product 
