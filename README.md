@@ -51,6 +51,39 @@ export class ProductAlertsComponent implements OnInit {
 </app-product-alerts>
  ```
  + Ta sử dụng thẻ [product] để truyền giá trị product vào alert-product component 
+### @Output  sự kiện từ component con ra ngoài component cha
++ Ta mởi 4 files sau product-list.component.html, product-list.component.ts , product-alerts.component.html,product-alerts.component.ts . Trong đó product-list là component cha chứ component con la product-alert. Câu hỏi đặt ra làm sao mình truyền sự kiện từ component con lên component cha để xử lý. <br>
++ Đầu tiên ta mở file  product-alerts.component.html
+```
+<p *ngIf="product.price > 700">
+    <button (click)="notifyAA.emit()">Notify Me</button>
+</p>
+```
++ Chúng ta thấy khi người dùng click vào component con (click) thì chúng ta gọi method notifyAA trong component class (controller)
+```
+export class ProductAlertsComponent implements OnInit {
+    @Output() notifyAA = new EventEmitter();
+}
+```
++ Compoent Class Alert con sẽ Emit sự kiện lên cho component cha (product-list) bằng cách sử dụng @Output() và EventEmitter()
++ Như vậy Component class cha (controller) sẽ nhận được sự kiện bởi vì trong file html của component cha chúng ta khai báo nhận sự kiện từ con là (notifyAA) . Lúc này component sẽ gọi sự kiện onNotify trong controller
+```<app-product-alerts [product]="product" (notifyAA)="onNotify()">
+   </app-product-alerts>
+```
+```
+export class ProductListComponent {
+  products = products;
+
+  share() {
+    window.alert('The product has been shared!');
+  }
+
+  onNotify() {
+    window.alert('You will be notified when the product goes on sale');
+  }
+}
+```
+
 ## Databinding
 ### One way biding sử dụng {{ }}
 + Step 1 trong file user.component.ts trong component user. Ta có biến là name với giá trị
