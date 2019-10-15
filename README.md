@@ -1,10 +1,6 @@
 # CGDN-Angular-StackBlitz
-# Tham khảo ví dụ tại trang 
-https://angular.io/start <br>
-https://viblo.asia/p/cung-tim-hieu-kien-truc-cua-angular-2-va-su-khac-nhau-ve-kien-truc-giua-angular-1-va-angular-2-gGJ592qpKX2 <br>
-http://itprotraining.vn/vi/tips-cong-nghe/Kien-truc-tong-quat-cua-Angular%205 <br>
-# Deploy app lên firebase
- https://medium.com/@longboardcreator/deploying-angular-6-applications-to-firebase-hosting-b5dacde9c772
+
+
 # Luồng đi của ứng dụng
 + Step 1 : Bắt đầu từ file main.js để bootstrap module
 + Step 2 : Từ file main.js sẽ bootstrap file app.module.ts
@@ -51,3 +47,12 @@ this.http.get(apiUrl).subscribe(val => console.log(val));
 ## UnSubcribe
 +Khi API trả về kết quả thì dữ liệu đó sẽ được log ra qua phương thức subscribe. Và để kết thúc quá trình lắng nghe kết quả từ API trả về thì chúng ta sẽ xử dụng đến phương thức unsubscribe
 this.http.get(apiUrl).subscribe(val => console.log(val)).unsubscribe();
+
+# Deploy app lên firebase
+ https://medium.com/@longboardcreator/deploying-angular-6-applications-to-firebase-hosting-b5dacde9c772
+
+# Tham khảo ví dụ tại trang 
+https://angular.io/start <br>
+https://viblo.asia/p/cung-tim-hieu-kien-truc-cua-angular-2-va-su-khac-nhau-ve-kien-truc-giua-angular-1-va-angular-2-gGJ592qpKX2 <br>
+http://itprotraining.vn/vi/tips-cong-nghe/Kien-truc-tong-quat-cua-Angular%205 <br>
+
