@@ -121,12 +121,18 @@ Trong file user.component.html. Ta có thể dùng attribute của thẻ để h
 
 ### Truyền sự kiện
 + Step 1 . Trong file html ta khai báo nút button có sự kiện onclick <button (click)="onButtonClicked()">Change Name</button>. Như ta thấy sự kiện được bọc trong 2 dấu ngoại tròn () .
+```
+<button (click)="onButtonClicked()">Change Name</button>
+```
 Sự kiện có thể là click, dbClick etc. Sau đó là tên sự kiện.
 + Step 2 . Ta khai báo hàm onButtonCLick trong file user.component.ts. Để sử lý sự kiện khi người dùng click vào 
 ### 2 way binding
 + Step 1 : Chúng ta phải sử dụng ngModule để thực hiện 2 way binding. Vì ngModule là 1 phần của FormsModule. Nên muốn sử dụng được 
 ngModule thì chúng ta phải import bằng tay FormsModule vào file app.module.
+```
+<input [(ngModel)]="name" />
 
+```
 ## Kết nối webservice
 + Trong file cart.service.js import thư viện HttpClientmport.
 + Để gọi webservice phương thức get http.get('http://164.132.226.137:1441/feed') . Trong đó http://164.132.226.137:1441/feed là đường dẫn tới webservice
