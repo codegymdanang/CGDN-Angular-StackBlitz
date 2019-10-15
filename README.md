@@ -165,7 +165,14 @@ updateHotJobStatus(jobId, status, params = {}) {
   }
 
 ```
-
++ Gọi webservice và nhận về kết quả bằng dùng method **subscribe** 
+```
+loadInfoOfCurrentJob() {
+    this.jobService.updateHotJobStatus(this.currentJob.slug).subscribe(response => {
+      this.currentJob = response;
+    });
+  }
+```
 ## Observable
 + Vì sao chọn Observable 
 https://www.learnrxjs.io/
