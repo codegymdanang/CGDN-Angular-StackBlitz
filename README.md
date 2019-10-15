@@ -153,7 +153,8 @@ this.http.get(apiUrl).subscribe(val => console.log(val)).unsubscribe();
  https://medium.com/@longboardcreator/deploying-angular-6-applications-to-firebase-hosting-b5dacde9c772
 
 # Tham khảo ví dụ tại trang 
-https://angular.io/start <br>
-https://viblo.asia/p/cung-tim-hieu-kien-truc-cua-angular-2-va-su-khac-nhau-ve-kien-truc-giua-angular-1-va-angular-2-gGJ592qpKX2 <br>
-http://itprotraining.vn/vi/tips-cong-nghe/Kien-truc-tong-quat-cua-Angular%205 <br>
-
++ https://angular.io/start 
++ https://viblo.asia/p/cung-tim-hieu-kien-truc-cua-angular-2-va-su-khac-nhau-ve-kien-truc-giua-angular-1-va-angular-2-gGJ592qpKX2
++ http://itprotraining.vn/vi/tips-cong-nghe/Kien-truc-tong-quat-cua-Angular%205 <br>
++ https://github.com/aviabird/angularspree/tree/develop/src/app
++ https://www.learnrxjs.io
