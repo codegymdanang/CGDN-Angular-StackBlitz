@@ -83,7 +83,26 @@ export class ProductListComponent {
   }
 }
 ```
-
+## Routing cho các component trong ứng dụng
++ Để đăng ký rounting cho ứng dụng thì chúng ta khai báo trong file app.module.ts. Gồm 2 phần , trong đó phần 1 là path (đường URL. Phần 2 là component . Như ta thấy nếu người dùng gõ vào http://localhost:4200/cart thì nó sẽ hiển thị Component Cart
+```
+@NgModule({
+  imports: [
+    RouterModule.forRoot([
+      { path: '', component: ProductListComponent},
+      { path: 'products/:productId', component: ProductDetailsComponent },
+      { path: 'cart', component : CartComponent},
+      { path: 'user', component : UserComponent},
+      { path: 'other', component : OthersProductComponent},
+    ])
+  ],
+```
++ Để sử dụng được router thì trong  file app.component.html ta sử dụng thẻ <router-outlet>
+```
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+```
 ## Databinding
 ### One way biding sử dụng {{ }}
 + Step 1 trong file user.component.ts trong component user. Ta có biến là name với giá trị
