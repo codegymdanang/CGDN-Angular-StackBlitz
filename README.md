@@ -30,6 +30,27 @@ Trong mỗi component có 3 files : ví dụ như trong component top-bar . Ta c
  ```
  + Chúng ta có ngFor dùng để repeat (lập lại) cac thẻ div. Chúng ta khai báo 1 biến product để duyệt các phần tử trong tập hợp  products. Tập hợp products sẽ được truyền từ controller sang cho html. Nếu products có 10 phần tử thì chúng ta sẽ có 10 cái div.
  + Để hiển thị tên của từng sản phẩm thi mình dùng {{ product.name }} để hiển thị ra trang web
+### Truyền giá trị vào component bằng @Input
+ 
+ ```
+Trong file src/app/product-list/product-alerts.component.ts
+content_copy
+export class ProductAlertsComponent implements OnInit {
+  @Input() product;
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
+ ```
+ + Ví dụ ta có component class có nhận đầu vào là product. Thì giá trị này sẽ được truyền vào bằng cách sau
+ ```
+<app-product-alerts
+  [product]="product">
+</app-product-alerts>
+ ```
+ + Ta sử dụng thẻ [product] để truyền giá trị product vào alert-product component 
 ## Databinding
 ### One way biding sử dụng {{ }}
 + Step 1 trong file user.component.ts trong component user. Ta có biến là name với giá trị
