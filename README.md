@@ -34,7 +34,7 @@ Trong mỗi component có 3 files : ví dụ như trong component top-bar . Ta c
  
  ```
 Trong file src/app/product-list/product-alerts.component.ts
-content_copy
+Ta thấy có anotation @Input product. Thì biến product sẽ nhận được giá trị từ file HTML truyền vào dưới đây.
 export class ProductAlertsComponent implements OnInit {
   @Input() product;
   constructor() { }
