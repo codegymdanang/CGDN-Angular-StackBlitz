@@ -12,12 +12,12 @@ là root của cả chương
 ### Angular Teamplate
 - Cú pháp của Angular template được kế thừa từ HTML và Javascript . Trong phân này chúng ta sẽ giới thiệu cách sử dụng cú pháp trong module Product 
 - Để hiểu được template thì trong folder product-list. Mở file product-list.component.html 
- <code>
+ ```
  <h2>Products</h2>
 
  <div *ngFor="let product of products">
  </div>
- </code>
+ ```
 ## Databinding
 ### One way biding sử dụng {{ }}
 + Step 1 trong file user.component.ts trong component user. Ta có biến là name với giá trị
