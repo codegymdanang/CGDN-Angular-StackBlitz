@@ -173,18 +173,20 @@ loadInfoOfCurrentJob() {
     });
   }
 ```
++ Subcribe
++Khi chúng ta làm việc với Observable thì sẽ thường xuyên sử dụng phương thức subscribe để theo dõi các thay đổi của dữ liệu hoặc nhận về kết quả của một công việc nào đó. 
+this.http.get(apiUrl).subscribe(val => console.log(val));
++ UnSubcribe
++Khi API trả về kết quả thì dữ liệu đó sẽ được log ra qua phương thức subscribe. Và để kết thúc quá trình lắng nghe kết quả từ API trả về thì chúng ta sẽ xử dụng đến phương thức unsubscribe
+this.http.get(apiUrl).subscribe(val => console.log(val)).unsubscribe();
+
 ## Observable
 + Vì sao chọn Observable 
 https://www.learnrxjs.io/
 https://techtalk.vn/chon-promise-hay-observable-khi-lam-viec-voi-angular.html
 ## ES6
 https://www.lifewire.com/best-javascript-es6-features-4579821
-## Subcribe
-+Khi chúng ta làm việc với Observable thì sẽ thường xuyên sử dụng phương thức subscribe để theo dõi các thay đổi của dữ liệu hoặc nhận về kết quả của một công việc nào đó. 
-this.http.get(apiUrl).subscribe(val => console.log(val));
-## UnSubcribe
-+Khi API trả về kết quả thì dữ liệu đó sẽ được log ra qua phương thức subscribe. Và để kết thúc quá trình lắng nghe kết quả từ API trả về thì chúng ta sẽ xử dụng đến phương thức unsubscribe
-this.http.get(apiUrl).subscribe(val => console.log(val)).unsubscribe();
+
 
 # Deploy app lên firebase
  https://medium.com/@longboardcreator/deploying-angular-6-applications-to-firebase-hosting-b5dacde9c772
