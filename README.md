@@ -9,6 +9,12 @@
 là root của cả chương 
 
 ## Các điểm chính của ứng dụng
+### Component
+- Component là chịu trách nhiệm trong việc hiển thị (UI). Component cho phép bạn sử dung lại ở nhiều modules khác nhau trong dự án. 
+- Component có 3 phần chính :
+  + Component Class : quản lý dữ liệu , các methods , thao tác với dữ liệu và truyền dữ liệu cho html (view)
+  + HTML template   : hiển thị giao diện (button, layout, ect)
+  + Styles          : CSS cho component
 ### Angular Teamplate
 - Cú pháp của Angular template được kế thừa từ HTML và Javascript . Trong phân này chúng ta sẽ giới thiệu cách sử dụng cú pháp trong module Product 
 - Để hiểu được template thì trong folder product-list. Mở file product-list.component.html 
