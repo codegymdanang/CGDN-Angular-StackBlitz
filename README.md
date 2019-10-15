@@ -22,7 +22,7 @@ Trong mỗi component có 3 files : ví dụ như trong component top-bar . Ta c
  ```
  <h2>Products</h2>
 
- <div *ngFor="let product of products">
+ <div <span style="color:blue">*ngFor</span>="let product of products">
       <h3>
       {{ product.name }}
   </h3>
