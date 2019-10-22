@@ -16,6 +16,14 @@ là root của cả chương
   + HTML template   : hiển thị giao diện (button, layout, ect)
   + Styles          : CSS cho component <br>
 Trong mỗi component có 3 files : ví dụ như trong component top-bar . Ta có top-bar.component.html ; top-bar.component.ts; top-bar.component.css
+### Vòng đời của 1 component
++ Vòng đời của một component xảy ra khi mình tạo , cập nhật , xoá các phần tử trên angular
++ Khi một component được tạo ra và phá huỷ đi. Angular sẽ tạo ra các vòng đời theo thứ tự sau. Dự vào các thứ tự này ta có thể hook vào và thay đổi
++ ngOnChanges(): Xảy ra khi Angular cập nhật giá trị hoặc binding giá trị cho phần tử. Nó gọi trước hàm ngOnInit();
++ ngOnInit()   : Xảy ra khi mình khởi tạo các component và sau khi Angular hiện thị data binding cho các component. Được gọi 1 lần sau khi ngOnChanges được gọi
++ ngDoCheck() :  Xảy ra khi có sự thay đổi được phát hiện trên các component. 
++ ngAfterContentInit() : 
+
 ### Angular Teamplate
 - Cú pháp của Angular template được kế thừa từ HTML và Javascript . Trong phân này chúng ta sẽ giới thiệu cách sử dụng cú pháp trong module Product 
 - Để hiểu được template thì trong folder product-list. Mở file product-list.component.html 
