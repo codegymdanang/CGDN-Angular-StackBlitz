@@ -91,6 +91,20 @@ export class ProductListComponent {
   }
 }
 ```
+### Truyền sự kiện với tham số
+- Trong file html ta có hàm onItemClick với 2 tham số là event và item. Khi click vào div thi nó sẽ truyền event và item qua method onItemClick bên controller
+```
+<div *ngFor="let item of data" (click)="onItemClick($event, item)">
+
+```
+- Bên controller mình có phương thức onItemClick nhận được tham sô item từ bên HTML truyền qua
+```
+onItemClick(event, item)
+{
+  console.log("Checking passed item: ",item);
+}
+```
+
 ## Routing cho các component trong ứng dụng
 + Để đăng ký rounting cho ứng dụng thì chúng ta khai báo trong file app.module.ts. Gồm 2 phần , trong đó phần 1 là path (đường URL. Phần 2 là component . Như ta thấy nếu người dùng gõ vào http://localhost:4200/cart thì nó sẽ hiển thị Component Cart
 ```
