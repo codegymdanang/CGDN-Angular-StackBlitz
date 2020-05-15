@@ -13,6 +13,7 @@ import {ProductDetailsComponent} from './product-details/product-details.compone
 import {CartComponent} from "./cart/cart.component";
 import { UserComponent } from './user/user.component';
 import { OthersProductComponent } from './others-product/others-product.component';
+import { FeedbackComponent } from './feedback/feedback.component'
 
 @NgModule({
   imports: [
@@ -24,6 +25,7 @@ import { OthersProductComponent } from './others-product/others-product.componen
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component : CartComponent},
       { path: 'user', component : UserComponent},
+      { path: 'feedback', component : FeedbackComponent},
       { path: 'other', component : OthersProductComponent},
     ])
   ],
@@ -35,6 +37,7 @@ import { OthersProductComponent } from './others-product/others-product.componen
     ProductDetailsComponent,
       CartComponent,
       UserComponent,
+      FeedbackComponent,
       OthersProductComponent
   ],
   bootstrap: [ AppComponent ]
