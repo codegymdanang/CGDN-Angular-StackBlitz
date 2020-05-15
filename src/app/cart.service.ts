@@ -33,7 +33,7 @@ export class CartService {
     }
 
     displayOtherProducts() {
-        return this.http.get('http://164.132.226.137:1441/feed');
+        return this.http.get('http://localhost:8080/feed');
     }
 
 }

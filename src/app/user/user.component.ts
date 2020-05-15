@@ -18,4 +18,8 @@ export class UserComponent implements OnInit {
     this.name = 'Nguyen';
   }
 
+  onSubmit(form) {
+    console.log(form);
+
+  }
 }
