@@ -25,7 +25,7 @@ export class OthersProductComponent implements OnInit {
 
     this.cartService.displayOtherProducts().subscribe(
         data => {
-            //  console.log(data),
+              console.log(data),
               this.feeds = data,
               err => console.error(err),
               () => console.log("done")

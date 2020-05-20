@@ -31,6 +31,7 @@ export class CartComponent {
         this.items = this.cartService.clearCart();
         this.checkoutFrom.reset();
 
+
     }
 
 
